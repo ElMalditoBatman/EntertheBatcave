@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Enter the Batcave</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a1428;
+      color: #c8d6e5;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 780px; width: 100%; }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #00d4ff;
+      margin-bottom: 0.5rem;
+    }
+    .updated {
+      color: #5a7a8a;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #1a2a3a;
+      padding-bottom: 1rem;
+    }
+    h2 {
+      color: #00d4ff;
+      font-size: 1.2rem;
+      margin: 1.5rem 0 0.75rem;
+    }
+    p { line-height: 1.7; color: #a0b4c8; margin-bottom: 0.75rem; }
+    ul { padding-left: 1.5rem; margin-bottom: 0.75rem; }
+    li { line-height: 1.7; color: #a0b4c8; margin-bottom: 0.3rem; }
+    strong { color: #e8f0f8; }
+    .scope-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0;
+    }
+    .scope-table th {
+      background: #0d1a2e;
+      color: #00d4ff;
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #1a2a3a;
+      font-size: 0.85rem;
+    }
+    .scope-table td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #1a2a3a;
+      font-size: 0.85rem;
+      color: #a0b4c8;
+    }
+    .scope-table tr:nth-child(even) td { background: #0d1a2e55; }
+    .footer {
+      margin-top: 3rem;
+      border-top: 1px solid #1a2a3a;
+      padding-top: 1.5rem;
+      text-align: center;
+      color: #3a5a6a;
+      font-size: 0.85rem;
+    }
+    .footer a { color: #00d4ff; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔒 Privacy Policy</h1>
+    <div class="updated">Last updated: July 23, 2026</div>
+
+    <h2>Overview</h2>
+    <p>
+      Enter the Batcave ("the App") is a personal health data dashboard operated
+      by <strong>ElMalditoBatman</strong>. This Privacy Policy explains how the
+      App accesses, uses, and stores your Google Health data.
+    </p>
+
+    <h2>Data Access & Permissions</h2>
+    <p>The App requests the following <strong>read-only</strong> scopes from Google Health API:</p>
+
+    <table class="scope-table">
+      <thead>
+        <tr>
+          <th>Scope</th>
+          <th>Data Accessed</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>googlehealth.activity_and_fitness.readonly</code></td>
+          <td>Steps, distance, active minutes, calories burned</td>
+          <td>Display daily activity summaries</td>
+        </tr>
+        <tr>
+          <td><code>googlehealth.sleep.readonly</code></td>
+          <td>Sleep duration, sleep stages, sleep quality</td>
+          <td>Display sleep metrics and trends</td>
+        </tr>
+        <tr>
+          <td><code>googlehealth.nutrition.readonly</code></td>
+          <td>Food logs, macronutrient breakdowns</td>
+          <td>Display nutrition tracking</td>
+        </tr>
+        <tr>
+          <td><code>googlehealth.health_metrics_and_measurements.readonly</code></td>
+          <td>Heart rate, weight, body composition, blood pressure</td>
+          <td>Display health metric trends</td>
+        </tr>
+        <tr>
+          <td><code>googlehealth.profile.readonly</code></td>
+          <td>Basic profile information (age, sex, height)</td>
+          <td>Contextualize health metrics</td>
+        </tr>
+        <tr>
+          <td><code>googlehealth.settings.readonly</code></td>
+          <td>Health platform preferences and data source settings</td>
+          <td>Configure data sources</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Data Storage</h2>
+    <p>
+      <strong>All data is stored locally</strong> on the user's own private server.
+      OAuth tokens are stored in a local encrypted file. No data is sent to any
+      third-party server, analytics service, or external API other than the
+      Google Health API itself.
+    </p>
+
+    <h2>Data Usage</h2>
+    <p>Your data is used exclusively for:</p>
+    <ul>
+      <li>Displaying health metrics on your personal dashboard</li>
+      <li>Generating daily/weekly health summaries</li>
+      <li>Aggregating activity trends over time</li>
+    </ul>
+    <p>Data is <strong>never</strong> sold, shared, or used for advertising.</p>
+
+    <h2>Data Retention</h2>
+    <p>
+      OAuth tokens are retained until you revoke them via
+      <a href="https://myaccount.google.com/permissions" style="color:#00d4ff;">myaccount.google.com/permissions</a>.
+      Cached health data is stored on your local server until you delete it.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      This App communicates with <strong>Google Health API</strong> (Google LLC)
+      solely for the purpose of retrieving your health data. Google's privacy
+      policy applies to data transmitted to their servers during OAuth
+      authentication and API calls.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+      OAuth tokens are stored with restricted file permissions (0600) on a
+      private Linux server. The App does not expose any public endpoints.
+      All API communication uses HTTPS.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For questions about this policy or data handling, contact:
+      <strong>animerem@gmail.com</strong>
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      This policy may be updated as the App evolves. The "Last updated" date
+      at the top of this page reflects the most recent changes.
+    </p>
+
+    <div class="footer">
+      <p>
+        <a href="/">← Back to Home</a> &bull;
+        Operated by ElMalditoBatman
+      </p>
+      <p style="margin-top: 0.5rem; color: #2a4a5a;">
+        Not affiliated with Google LLC.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
